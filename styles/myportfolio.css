@@ -827,6 +827,7 @@ header div ul a:hover{
     }
     header img {
         height: 4rem;
+        width: 5rem;
         margin-left: 1rem;
         margin-top: 0.5rem;
     }
@@ -913,6 +914,7 @@ header div ul a:hover{
 
     header img {
         height: 3rem;
+        width:4rem;
         margin-left: 0.5rem;
         margin-top: 0.3rem;
     }
