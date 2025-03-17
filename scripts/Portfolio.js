@@ -36,14 +36,14 @@ const targetDiv = document.getElementById("sec_div"); // The div that triggers t
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            if (entry.intersectionRatio >= 0.3) {
+            if (entry.intersectionRatio >= 0.2) {
                 document.body.classList.add("sec_theme"); // Activate dark mode
             } else {
                 document.body.classList.remove("sec_theme"); // Return to light mode
             }
         });
     },
-    { threshold: 0.3 } // When 30% of targetDiv is visible
+    { threshold: 0.2 } // When 30% of targetDiv is visible
 );
 
 observer.observe(sec_div);
@@ -63,14 +63,14 @@ const thirdDiv = document.getElementById("experience"); // The div that triggers
 const looker = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            if (entry.intersectionRatio >= 0.3) {
+            if (entry.intersectionRatio >= 0.4) {
                 document.body.classList.add("thi_theme"); // Activate dark mode
             } else {
                 document.body.classList.remove("thi_theme"); // Return to light mode
             }
         });
     },
-    { threshold: 0.3 } // When 30% of targetDiv is visible
+    { threshold: 0.4 } // When 30% of targetDiv is visible
 );
 
 looker.observe(experience);
@@ -81,14 +81,14 @@ const fourthDiv = document.getElementById("thi_div"); // The div that triggers t
 const watcher = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            if (entry.intersectionRatio >= 0.3) {
+            if (entry.intersectionRatio >= 0.2) {
                 document.body.classList.add("for_theme"); // Activate dark mode
             } else {
                 document.body.classList.remove("for_theme"); // Return to light mode
             }
         });
     },
-    { threshold: 0.3 } // When 30% of targetDiv is visible
+    { threshold: 0.2 } // When 30% of targetDiv is visible
 );
 
 watcher.observe(thi_div);
