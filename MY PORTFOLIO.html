@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David's technologies</title>
+    <link rel="icon" type="image/png" href="/Users/Administrator/OneDrive/Pictures/Camera Roll/favicon.webp">
+    <link rel="stylesheet" href="C:\Users\Administrator\myportfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parkinsans:wght@300..800&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="sec_theme">
+    <div class="false"></div>
+    <header id="header">
+      <img
+        src="/Users/Administrator/OneDrive/Pictures/Camera Roll/my photo.jpg"
+        alt=""
+        style="border-radius: 100%"
+      />
+      <div>
+        <ul>
+          <li>
+            <a href="#tag" class="links active">Home</a>
+          </li>
+          <li>
+            <a href="#heir" class="links">About</a>
+          </li>
+          <li>
+            <a href="#expert" class="links">Experience</a>
+          </li>
+          <li>
+            <a href="#freak" class="links">Services</a>
+          </li>
+          <li>
+            <a href="#jesus" class="links">Projects</a>
+          </li>
+          <li>
+            <a href="#end" class="links">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu" id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000001"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+      </div>
+    </header>
+
+    <div id="overlay" onclick="navcan()"> </div>
+    <div class="side-menu" id="side-menu">
+      <ul>
+        <li>
+          <div class="Xmenu" id="Xmenu">
+            <svg xmlns="http://www.w3.org/2000/svg"class="Xmenu-icon" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </div>
+        </li>
+        <li>
+          <a href="#tag" class="active" onclick="navcan()">Home</a>
+        </li>
+        <li>
+          <a href="#heir" onclick="navcan()">About</a>
+        </li>
+        <li>
+          <a href="#expert" onclick="navcan()">Experience</a>
+        </li>
+        <li>
+          <a href="#freak" onclick="navcan()">Services</a>
+        </li>
+        <li>
+          <a href="#jesus" onclick="navcan()">Project</a>
+        </li>
+        <li>
+          <a href="#end" onclick="navcan()"> Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="side-socials">
+      <a href="https://github.com/Robotinic17" target="_blank">
+        <svg
+          class="svg"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-github"
+          style="cursor: pointer"
+        >
+          <title>GitHub</title>
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://wa.me/+2348143791465" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          class="svg"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 25 2 C 12.3 2 2 12.3 2 25 C 2 29.1 3.1 32.899219 5 36.199219 L 2 46.699219 C 1.9 46.999219 1.9992187 47.399219 2.1992188 47.699219 C 2.4992187 47.999219 2.8992187 48 3.1992188 48 L 14.199219 45.300781 C 17.399219 47.000781 21.1 48 25 48 C 37.7 48 48 37.7 48 25 C 48 12.3 37.7 2 25 2 z M 25 4 C 36.6 4 46 13.4 46 25 C 46 36.6 36.6 46 25 46 C 21.3 46 17.800781 45.000781 14.800781 43.300781 C 14.600781 43.200781 14.299609 43.099219 14.099609 43.199219 L 4.5 45.599609 L 7 36.400391 C 7.1 36.100391 7.0003906 35.899609 6.9003906 35.599609 C 5.1003906 32.499609 4 28.9 4 25 C 4 13.4 13.4 4 25 4 z M 18.113281 12.988281 C 17.925781 12.975781 17.800781 13 17.800781 13 L 16.599609 13 C 15.999609 13 15.100781 13.2 14.300781 14 C 13.800781 14.5 12 16.3 12 19.5 C 12 22.9 14.299609 25.799609 14.599609 26.099609 C 14.599609 26.099609 15 26.600781 15.5 27.300781 C 16 28.000781 16.699609 28.800781 17.599609 29.800781 C 19.399609 31.700781 21.899609 33.899219 25.099609 35.199219 C 26.499609 35.799219 27.699609 36.2 28.599609 36.5 C 30.199609 37 31.700781 36.900781 32.800781 36.800781 C 33.600781 36.700781 34.500391 36.299219 35.400391 35.699219 C 36.300391 35.099219 37.199609 34.400391 37.599609 33.400391 C 37.899609 32.600391 37.999609 31.900781 38.099609 31.300781 L 38.099609 30.5 C 38.099609 30.2 38.000781 30.200781 37.800781 29.800781 C 37.300781 29.000781 36.799219 29.000781 36.199219 28.800781 C 35.899219 28.600781 34.999219 28.200781 34.199219 27.800781 C 33.299219 27.400781 32.599609 27.000781 32.099609 26.800781 C 31.799609 26.700781 31.400391 26.499609 30.900391 26.599609 C 30.400391 26.699609 29.899609 27 29.599609 27.5 C 29.299609 27.9 28.200781 29.299219 27.800781 29.699219 L 27.699219 29.599609 C 27.299219 29.399609 26.7 29.200781 26 28.800781 C 25.2 28.400781 24.299219 27.800781 23.199219 26.800781 C 21.599219 25.400781 20.499219 23.699609 20.199219 23.099609 C 20.499219 22.699609 20.899609 22.3 21.099609 22 C 21.199609 21.9 21.280859 21.799219 21.349609 21.699219 C 21.418359 21.599219 21.475391 21.500391 21.525391 21.400391 C 21.625391 21.200391 21.700781 21.000781 21.800781 20.800781 C 22.200781 20.100781 22.000781 19.300391 21.800781 18.900391 C 21.800781 18.900391 21.7 18.600781 21.5 18.300781 C 21.4 18.000781 21.2 17.499609 21 17.099609 C 20.6 16.199609 20.2 15.199609 20 14.599609 C 19.7 13.899609 19.300781 13.399219 18.800781 13.199219 C 18.550781 13.049219 18.300781 13.000781 18.113281 12.988281 z M 16.599609 15 L 17.699219 15 L 17.900391 15 C 17.900391 15 17.999609 15.100391 18.099609 15.400391 C 18.299609 16.000391 18.799609 17.000391 19.099609 17.900391 C 19.299609 18.300391 19.499609 18.799609 19.599609 19.099609 C 19.699609 19.399609 19.800391 19.600781 19.900391 19.800781 C 19.900391 19.900781 20 19.900391 20 19.900391 C 19.8 20.300391 19.8 20.399219 19.5 20.699219 C 19.2 21.099219 18.799219 21.499219 18.699219 21.699219 C 18.599219 21.899219 18.299609 22.1 18.099609 22.5 C 17.899609 22.9 18.000781 23.599609 18.300781 24.099609 C 18.700781 24.699609 19.900781 26.700391 21.800781 28.400391 C 23.000781 29.500391 24.1 30.199609 25 30.599609 C 25.9 31.099609 26.600781 31.300391 26.800781 31.400391 C 27.200781 31.600391 27.599609 31.699219 28.099609 31.699219 C 28.599609 31.699219 29.000781 31.3 29.300781 31 C 29.700781 30.6 30.699219 29.399609 31.199219 28.599609 L 31.400391 28.699219 C 31.400391 28.699219 31.699609 28.8 32.099609 29 C 32.499609 29.2 32.900391 29.399609 33.400391 29.599609 C 34.300391 29.999609 35.100391 30.399609 35.400391 30.599609 L 36 30.900391 L 36 31.199219 C 36 31.599219 35.899219 32.200781 35.699219 32.800781 C 35.599219 33.100781 35.000391 33.699609 34.400391 34.099609 C 33.700391 34.499609 32.899609 34.800391 32.599609 34.900391 C 31.699609 35.000391 30.600781 35.099219 29.300781 34.699219 C 28.500781 34.399219 27.4 34.1 26 33.5 C 23.2 32.3 20.899219 30.3 19.199219 28.5 C 18.399219 27.6 17.699219 26.799219 17.199219 26.199219 C 16.699219 25.599219 16.500781 25.2 16.300781 25 C 15.900781 24.6 14 21.999609 14 19.599609 C 14 17.099609 15.200781 16.100391 15.800781 15.400391 C 16.100781 15.000391 16.499609 15 16.599609 15 z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/dave_creative.dev/"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          class="svg"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 16 3 C 8.8545455 3 3 8.8545455 3 16 L 3 34 C 3 41.145455 8.8545455 47 16 47 L 34 47 C 41.145455 47 47 41.145455 47 34 L 47 16 C 47 8.8545455 41.145455 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.054545 5 45 9.9454545 45 16 L 45 34 C 45 40.054545 40.054545 45 34 45 L 16 45 C 9.9454545 45 5 40.054545 5 34 L 5 16 C 5 9.9454545 9.9454545 5 16 5 z M 37 11 C 35.9 11 35 11.9 35 13 C 35 14.1 35.9 15 37 15 C 38.1 15 39 14.1 39 13 C 39 11.9 38.1 11 37 11 z M 25 14 C 18.954545 14 14 18.954545 14 25 C 14 31.045455 18.954545 36 25 36 C 31.045455 36 36 31.045455 36 25 C 36 18.954545 31.045455 14 25 14 z M 25 16 C 29.954545 16 34 20.045455 34 25 C 34 29.954545 29.954545 34 25 34 C 20.045455 34 16 29.954545 16 25 C 16 20.045455 20.045455 16 25 16 z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://x.com/DavidTimil93017/"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          class="svg"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 34.199219 5.5996094 C 28.256009 5.5996094 23.400391 10.457181 23.400391 16.400391 C 23.400391 16.785135 23.429781 17.149605 23.472656 17.509766 C 16.141762 16.814224 9.5591993 13.067494 5.0683594 7.6601562 A 1.0001 1.0001 0 0 0 4.2773438 7.3007812 A 1.0001 1.0001 0 0 0 3.4316406 7.8046875 C 2.5476787 9.351621 2 11.214034 2 13.199219 C 2 15.562405 2.8180434 17.715053 4.1230469 19.511719 C 3.8757846 19.410652 3.5889897 19.425349 3.3476562 19.304688 A 1.0001 1.0001 0 0 0 1.9003906 20.199219 L 1.9003906 20.300781 C 1.9003906 24.001469 3.807742 27.155702 6.6152344 29.128906 C 6.5637034 29.120706 6.5153064 29.121711 6.4648438 29.113281 A 1.0001 1.0001 0 0 0 5.3515625 30.416016 C 6.5123023 33.898235 9.3526931 36.662552 12.925781 37.576172 C 10.11331 39.223372 6.8834712 40.199219 3.4003906 40.199219 C 2.6003906 40.199219 1.8365929 40.194315 1.2421875 40.109375 A 1.0001 1.0001 0 0 0 0.5625 41.943359 C 5.1122086 44.838628 10.408743 46.5 16.199219 46.5 C 25.525462 46.5 32.830248 42.60559 37.738281 37.037109 C 42.646315 31.468628 45.199219 24.253846 45.199219 17.5 L 45.199219 16.652344 C 47.010105 15.254487 48.661337 13.60786 49.9375 11.644531 A 1.0001 1.0001 0 0 0 48.693359 10.185547 C 48.165362 10.420212 47.55475 10.474381 47.005859 10.658203 C 47.7011 9.7200127 48.301383 8.7065336 48.652344 7.6035156 A 1.0001 1.0001 0 0 0 47.199219 6.4355469 C 45.499905 7.41936 43.612969 8.1303268 41.558594 8.6132812 C 39.607275 6.8020984 37.038549 5.5996094 34.199219 5.5996094 z M 34.199219 7.5996094 C 36.713504 7.5996094 39.059904 8.6850853 40.673828 10.388672 A 1.0001 1.0001 0 0 0 41.613281 10.677734 C 42.934626 10.390485 44.182854 9.9844613 45.384766 9.5039062 C 44.688934 10.433412 43.854953 11.259684 42.884766 11.841797 A 1.0001 1.0001 0 0 0 43.548828 13.689453 C 44.53531 13.541481 45.439415 13.146528 46.388672 12.890625 C 45.537378 13.803338 44.61667 14.650874 43.607422 15.394531 A 1.0001 1.0001 0 0 0 43.199219 16.199219 L 43.199219 17.5 C 43.199219 23.746154 40.805248 30.531372 36.238281 35.712891 C 31.671315 40.89441 24.972976 44.5 16.199219 44.5 C 12.14649 44.5 8.3797763 43.635083 4.9570312 42.064453 C 9.1716125 41.741689 13.039926 40.216826 16.207031 37.794922 A 1.0004308 1.0004308 0 0 0 16.302734 36.287109 A 1.0001 1.0001 0 0 0 15.5 35.900391 C 12.240871 35.900391 9.5097656 33.985527 8.0117188 31.28125 C 8.0766008 31.28295 8.1346327 31.300781 8.1992188 31.300781 C 9.1732927 31.300781 10.147857 31.194481 11.042969 30.970703 A 1.0001 1.0001 0 0 0 11.017578 29.023438 C 7.4284817 28.225862 4.7618144 25.363329 4.1542969 21.738281 C 5.1792732 22.075097 6.2324618 22.329347 7.3378906 22.398438 A 1.0001 1.0001 0 0 0 7.9550781 20.568359 C 5.5205757 18.945358 4 16.265885 4 13.199219 C 4 12.071965 4.2776547 11.025922 4.6542969 10.044922 C 9.688803 15.495995 16.707779 19.212301 24.550781 19.599609 A 1.0002161 1.0002161 0 0 0 24.650391 19.599609 A 1.0002908 1.0002908 0 0 0 24.652344 19.599609 A 1.0002908 1.0002908 0 0 0 25.662109 18.326172 C 25.486299 17.710834 25.400391 17.117057 25.400391 16.400391 C 25.400391 11.543601 29.342429 7.5996094 34.199219 7.5996094 z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://www.linkden.com/in/dave-eluwole/"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          class="svg"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M 8 3.0117188 C 6.3126093 3.0117188 4.8354789 3.4916328 3.7539062 4.3652344 C 2.6723337 5.238836 2.0117188 6.533218 2.0117188 7.9472656 C 2.0117188 10.690836 4.4687078 12.814467 7.7167969 12.941406 A 0.98809878 0.98809878 0 0 0 8 12.988281 C 9.753566 12.988281 11.246191 12.474267 12.3125 11.564453 C 13.378809 10.654639 13.988281 9.3429353 13.988281 7.9472656 A 0.98809878 0.98809878 0 0 0 13.986328 7.8925781 C 13.832307 5.1316834 11.374781 3.0117187 8 3.0117188 z M 8 4.9882812 C 10.60907 4.9882812 11.895883 6.2693448 12.005859 7.9726562 C 11.998759 8.8049335 11.676559 9.5118991 11.03125 10.0625 C 10.378809 10.619186 9.371434 11.011719 8 11.011719 C 5.3980542 11.011719 3.9882813 9.5991704 3.9882812 7.9472656 C 3.9882812 7.1213132 4.3276663 6.4422421 4.9960938 5.9023438 C 5.6645211 5.3624454 6.6873907 4.9882813 8 4.9882812 z M 3 15 A 1.0001 1.0001 0 0 0 2 16 L 2 45 A 1.0001 1.0001 0 0 0 3 46 L 13 46 A 1.0001 1.0001 0 0 0 14 45 L 14 35.664062 L 14 16 A 1.0001 1.0001 0 0 0 13 15 L 3 15 z M 18 15 A 1.0001 1.0001 0 0 0 17 16 L 17 45 A 1.0001 1.0001 0 0 0 18 46 L 28 46 A 1.0001 1.0001 0 0 0 29 45 L 29 29 L 29 28.75 L 29 28.5 C 29 26.555577 30.555577 25 32.5 25 C 34.444423 25 36 26.555577 36 28.5 L 36 45 A 1.0001 1.0001 0 0 0 37 46 L 47 46 A 1.0001 1.0001 0 0 0 48 45 L 48 28 C 48 23.873476 46.787888 20.604454 44.744141 18.375 C 42.700394 16.145546 39.849212 15 36.787109 15 C 32.882872 15 30.521631 16.426076 29 17.601562 L 29 16 A 1.0001 1.0001 0 0 0 28 15 L 18 15 z M 4 17 L 12 17 L 12 35.664062 L 12 44 L 4 44 L 4 17 z M 19 17 L 27 17 L 27 19.638672 A 1.0001 1.0001 0 0 0 28.744141 20.306641 C 28.744141 20.306641 31.709841 17 36.787109 17 C 39.360007 17 41.615528 17.922268 43.269531 19.726562 C 44.923534 21.530858 46 24.261524 46 28 L 46 44 L 38 44 L 38 28.5 A 1.0001 1.0001 0 0 0 37.916016 28.089844 C 37.694061 25.26411 35.38033 23 32.5 23 C 29.474423 23 27 25.474423 27 28.5 L 27 28.75 L 27 29 L 27 44 L 19 44 L 19 17 z"
+          ></path>
+        </svg>
+      </a>
+      <div></div>
+    </div>
+
+    <div class="side-email">
+      <a href="mailto:davidtimileyin55@gmail.com">davidtimileyin@Gmail.com</a>
+      <div class="line-mail"></div>
+    </div>
+    <div id="tag"></div>
+    <div class="body" id="body">
+      <div class="name">
+        <b>Good Day,</b>
+      </div>
+      <div class="name">
+        <b>I'm Eluwole David,</b>
+      </div>
+      <div class="dynamic" id="dynamic"></div>
+
+      <div class="hello">
+        Hello there, <b> I'm Eluwole David Timileyin,</b> a passionate frontend
+        developer with a deep love for crafting engaging and dynamic web
+        experiences. While currently pursuing a degree in Aerospace Engineering
+        at Obafemi Awolowo University (O.A.U), my enthusiasm for development
+        drives me to build beautiful, functional, and user-friendly interfaces.
+        I specialize in: Developing responsive and interactive UIs Bringing
+        designs to life with HTML, CSS, and JavaScript Ensuring seamless user
+        experiences across devices Implementing smooth animations and
+        transitions Optimizing web performance for faster load times Beyond just
+        writing code, I take pride in being honest, trustworthy, and committed
+        to delivering the best for my clients. Your vision is my priority, and I
+        ensure that every project reflects high-quality standards and attention
+        to detail. Let's build something amazing together! 🚀
+      </div>
+
+      <a href="mailto:davidtimileyin55@gmail.com" class="heir" id="heir">
+        <div class="hire">Start a project</div>
+      </a>
+
+      <!-- second div-->
+      <div class="sec_div" id="sec_div">
+        <div class="port">
+          <div>My Portfolio</div>
+          <div></div>
+        </div>
+
+        <div class="intoduction">
+          <div class="child1">
+            <div>
+              <h4>Welcome to My Portfolio</h4>
+              Hello! I'm Dave, a passionate front-end developer and a college
+              student pursuing a degree in Aerospace Engineering at Obafemi
+              Awolowo University (OAU). My journey into technology has been both
+              exciting and enriching, blending my love for engineering with my
+              passion for creating intuitive, engaging web experiences.
+            </div>
+
+            <div>
+              <h4>My Journey into Web Development</h4>
+              From an early age, I've been captivated by how things work—whether
+              in engineering, physics, or technology. This curiosity led me to
+              explore web development, where I discovered the power of turning
+              ideas into interactive digital experiences. Over the past two
+              years, I have dedicated myself to mastering HTML, CSS, JavaScript,
+              and Bootstrap, building a strong foundation in front-end
+              development. Along the way, I've also gained valuable insights
+              into responsive design, UI/UX principles, and performance
+              optimization, allowing me to craft websites that are both
+              aesthetically pleasing and highly functional.
+            </div>
+
+            <div>
+              <h4>My Development Experience</h4>
+              Currently, my portfolio features a project that I built entirely
+              on my own—a milestone that represents my growth as a developer.
+              From designing the layout to implementing interactive features, I
+              tackled every aspect of the development process. This hands-on
+              experience reinforced my ability to problem-solve, debug
+              efficiently, and iterate on ideas based on user experience. While
+              I take pride in this project, I see it as just the beginning—I'm
+              eager to take on more ambitious challenges that push my skills
+              even further.
+            </div>
+
+            <div>
+              <h4>The Unique Blend of Aerospace & Web Development</h4>
+              Balancing my aerospace engineering studies with web development
+              has been both demanding and rewarding. The analytical thinking and
+              problem-solving skills I cultivate in engineering—such as breaking
+              down complex problems, optimizing solutions, and thinking
+              critically—have proven invaluable in my approach to coding. Both
+              fields share a common principle: innovating solutions to complex
+              challenges.
+            </div>
+
+            <div>
+              <h4>Continuous Growth & Future Aspirations</h4>
+              I believe that growth comes from constant learning,
+              experimentation, and collaboration. That's why I actively seek
+              opportunities to expand my skill set—whether through online
+              courses, technical workshops, or working alongside fellow
+              developers. In the near future, I plan to explore React.js,
+              Tailwind CSS, and backend technologies like Node.js to broaden my
+              capabilities and build more dynamic, full-stack applications.
+            </div>
+
+            <div>
+              <i>
+                <h4>Let's Build Something Amazing Together!</h4>
+                I'm always open to new opportunities and collaborations. Whether
+                you're looking for a developer to bring your vision to life or a
+                fellow enthusiast to brainstorm ideas, let's connect! Together,
+                we can create something impactful.
+              </i>
+            </div>
+          </div>
+          <!--nth-child(1)-->
+          <div class="child2">
+            <div class="image-border"></div>
+            <img
+              src="/Users/Administrator/OneDrive/Pictures/Camera Roll/1111gg.jpg"
+              alt=""
+            />
+          </div>
+          <!--nth-child(2)-->
+        </div>
+
+        <div id="expert"></div>
+        <div class="experience" id="experience">
+          <h4>My Job Experience</h4>
+          <p>
+            With two years of hands-on experience in web development, I have
+            honed my skills in building interactive and user-friendly web
+            applications. My expertise lies in HTML, CSS, JavaScript, and
+            Bootstrap, allowing me to create responsive and visually appealing
+            interfaces. Over time, I have worked on personal projects that have
+            strengthened my problem-solving abilities and deepened my
+            understanding of front-end development best practices. Through
+            continuous learning and collaboration, I strive to enhance user
+            experiences while keeping up with modern web technologies. I am
+            always open to new challenges and opportunities to grow, whether
+            through team projects, freelance work, or innovative web solutions.
+          </p>
+
+          <div class="skills">
+            I've learnt the following languages over the years;
+            <div class="codes">
+              <div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    class="ayomide"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
+                    <path
+                      fill="none"
+                      stroke="#000001"
+                      stroke-miterlimit="10"
+                      stroke-width="3.3"
+                      d="M23.783,22.352v9.819 c0,3.764-4.38,4.022-6.283,0.802"
+                    ></path>
+                    <path
+                      fill="none"
+                      stroke="#000001"
+                      stroke-miterlimit="10"
+                      stroke-width="3.3"
+                      d="M34.69,25.343 c-1.739-2.727-5.674-2.345-5.84,0.558c-0.214,3.757,6.768,2.938,6.247,7.107c-0.365,2.92-4.874,3.858-7.193-0.065"
+                    ></path>
+                  </svg>
+                </div>
+                <p>JavaScript</p>
+              </div>
+              <div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="100"
+                    height="100"
+                    class="ayomide"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#E65100"
+                      d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"
+                    ></path>
+                    <path
+                      fill="#FF6D00"
+                      d="M24 8L24 39.9 35.2 36.7 37.7 8z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"
+                    ></path>
+                    <path
+                      fill="#EEE"
+                      d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"
+                    ></path>
+                  </svg>
+                </div>
+                <p>HTML</p>
+              </div>
+
+              <div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    class="ayomide"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <linearGradient
+                      id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1"
+                      x1="16.33"
+                      x2="32.293"
+                      y1="-2.748"
+                      y2="41.109"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#2aa4f4"></stop>
+                      <stop offset="1" stop-color="#007ad9"></stop>
+                    </linearGradient>
+                    <path
+                      fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)"
+                      d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z"
+                    ></path>
+                    <path
+                      fill="#35c1f1"
+                      d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z"
+                    ></path>
+                    <path
+                      fill="#d6e0e9"
+                      d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z"
+                    ></path>
+                    <path
+                      d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z"
+                      opacity=".05"
+                    ></path>
+                    <path
+                      d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z"
+                      opacity=".07"
+                    ></path>
+                  </svg>
+                </div>
+                <p>CSS</p>
+              </div>
+
+              <div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    class="ayomide"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#7c4dff"
+                      d="M7.373,11.443C7.293,9.132,9.094,7,11.529,7h24.946c2.435,0,4.236,2.132,4.155,4.443	c-0.077,2.221,0.023,5.097,0.747,7.443c0.726,2.353,1.951,3.84,3.957,4.031v2.167c-2.006,0.191-3.23,1.678-3.957,4.031	c-0.724,2.345-0.824,5.222-0.747,7.443C40.71,38.868,38.909,41,36.475,41H11.529c-2.434,0-4.236-2.132-4.155-4.443	c0.077-2.221-0.023-5.097-0.747-7.443c-0.726-2.353-1.954-3.84-3.96-4.031v-2.167c2.006-0.191,3.233-1.678,3.96-4.031	C7.35,16.54,7.451,13.664,7.373,11.443z"
+                    ></path>
+                    <path
+                      fill="#fff"
+                      d="M27.073,23.464v-0.028c1.853-0.32,3.299-2.057,3.299-3.97c0-1.352-0.52-2.498-1.504-3.312	c-0.981-0.812-2.357-1.241-3.981-1.241H17.45V33.08h7.475c1.942,0,3.555-0.474,4.663-1.372c1.109-0.899,1.696-2.207,1.696-3.783	C31.283,25.544,29.593,23.756,27.073,23.464z M23.59,22.608h-3.181V17.29h3.784c2.076,0,3.219,0.911,3.219,2.565	C27.413,21.63,26.055,22.608,23.59,22.608z M20.409,24.834h3.759c2.716,0,4.092,0.981,4.092,2.916c0,1.932-1.357,2.953-3.925,2.953	h-3.926V24.834z"
+                    ></path>
+                  </svg>
+                </div>
+                <p>Bootstrap</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--sec_div-->
+      <div id="freak"> </div>
+
+      <div class="thi_div" id="thi_div">
+        <div class="thi_rep">
+          <div class="serve">My Services</div>
+          <div id="serve2"></div>
+        </div>
+
+        <div class="Offer">
+          <div id="type2">
+            <h4>What I Offer</h4>
+            As a front-end developer with experience in JavaScript, Bootstrap,
+            CSS, and HTML, I specialize in crafting clean, responsive, and
+            interactive web experiences. Here's how I can bring value to your
+            project:
+          </div>
+
+          <div id="type3">
+            <h4>Custom Front-End Development</h4>
+            I build modern, high-performing websites that are visually appealing
+            and user-friendly. From landing pages to full-scale web
+            applications, I ensure every line of code enhances both aesthetics
+            and functionality.
+          </div>
+
+          <div id="type4">
+            <h4>Responsive Web Design</h4>
+            In today's digital world, a seamless user experience across all
+            devices is essential. I specializein creating
+            <b>fully responsive designs</b> that adapt beautifully to desktops,
+            tablets, mobile screens. Whether it's a business website, portfolio,
+            or web application, I ensure that every layout is fluid, visually
+            appealing, and user-friendly.
+          </div>
+
+          <div id="type5">
+            <h4>Performance Optimization</h4>
+            A fast, efficient website is key to user satisfaction and business
+            success. I specialize in performance optimization, ensuring your
+            site loads quickly, runs smoothly, and delivers a seamless
+            experience across all devices. Using best practices like code
+            minification, image optimization, lazy loading, and efficient
+            caching, I enhance website speed while maintaining high-quality
+            visuals and functionality. I also optimize scripts and stylesheets
+            to reduce unnecessary bloat, improving page load times and overall
+            performance. With my expertise in HTML, CSS, JavaScript, and
+            Bootstrap, I build sites that are not just visually appealing but
+            also optimized for speed, SEO, and user engagement.
+          </div>
+
+          <div id="type6">
+            <h4>UI/UX Implementation</h4>
+            A great website is more than just aesthetics—it's about seamless
+            user experience (UX) and intuitive user interfaces (UI). I
+            specialize in implementing designs that are both visually stunning
+            and functionally effective, ensuring users have a smooth, engaging,
+            and accessible experience. With expertise in HTML, CSS, JavaScript,
+            and Bootstrap, I transform design concepts into fully interactive
+            and responsive web interfaces. My approach focuses on: User-Centered
+            Design: Ensuring intuitive navigation and easy interactions.
+            Consistency & Accessibility: Creating clean, well-structured layouts
+            that are inclusive for all users. Interactivity & Responsiveness:
+            Implementing smooth animations, transitions, and mobile-friendly
+            designs. By combining modern UI principles with best UX practices, I
+            bring designs to life in a way that enhances usability and
+            engagement.
+          </div>
+          <div id="type7">
+            <h4>Debugging & Maintenance</h4>
+            Web development doesn't stop at deployment—ongoing maintenance and
+            debugging are crucial for keeping your website running smoothly. I
+            specialize in identifying and fixing issues that affect performance,
+            functionality, or user experience, ensuring your site remains
+            error-free, secure, and up-to-date. My debugging and maintenance
+            services include: Bug Fixing: Identifying and resolving JavaScript,
+            CSS, and HTML issues. Performance Enhancements: Optimizing code,
+            scripts, and assets for faster load times. Security Updates: Keeping
+            your website protected against vulnerabilities. Ongoing Support:
+            Regular updates, content modifications, and functionality
+            improvements. With my expertise in HTML, CSS, JavaScript, and
+            Bootstrap, I ensure your website stays efficient, responsive, and
+            user-friendly over time.
+          </div>
+          <div id="type8">
+            <h4>Collaboration & Problem-Solving</h4>
+            Great projects thrive on effective collaboration and strategic
+            problem-solving. As a developer, I bring a team-oriented mindset and
+            a solution-driven approach to every project, ensuring smooth
+            communication, efficient workflows, and innovative solutions to
+            challenges. My collaboration and problem-solving approach includes:
+            Clear Communication: Working closely with clients, designers, and
+            teams to align goals. Adaptability & Open-Mindedness: Embracing
+            feedback and iterating for the best results. Analytical Thinking:
+            Breaking down complex problems and implementing efficient solutions.
+            Efficient Workflow Management: Utilizing best practices for clean,
+            maintainable code and seamless integration. With my experience in
+            HTML, CSS, JavaScript, and Bootstrap, I don't just write code—I help
+            create solutions that enhance user experience, improve
+            functionality, and drive project success.
+          </div>
+        </div>
+        <!--offer end-->
+        <div id="jesus"> </div>
+        <div class="project">
+          <div class="pro_head">My Projects</div>
+          <div class="project1">
+            <div class="SASAP">
+              <div class="ASAP">A Real estate Webiste</div>
+              <div class="SAP">
+                A fully custom-built real estate website where buyers and
+                sellers can connect effortlessly. Designed for a smooth and
+                engaging user experience, the platform features intuitive
+                navigation, advanced search filters, and interactive property
+                listings. Built from scratch with a focus on performance and
+                aesthetics, it ensures seamless browsing across all devices,
+                making property discovery easier and more efficient.
+              </div>
+            </div>
+            <div>
+              <img
+                src="/Users/Administrator/OneDrive/Pictures/Camera Roll/real_project.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div id="end"></div>
+
+        <div class="conclude">
+          <div class="con1">
+            <i>GET IN TOUCH</i>
+          </div>
+          <div class="con2">Lets Work Together</div>
+          <div class="con3">
+            Let's build something amazing together! Feel free to reach
+            out—whether it's to collaborate, discuss a project, or just say
+            hello. I'd love to hear from you!
+          </div>
+          <a href="mailto:davidtimileyin55@gmail.com" class="con4a"><div class="con4">Say Hello</div></a>
+        </div>
+      </div>
+      <!--thi_div end-->
+    </div>
+    <!--body end-->
+    <script src="C:\Users\Administrator\Portfolio.js"></script>
+  </body>
+</html>
