@@ -90,6 +90,7 @@ header{
 }
 header img{
     height: 5rem;
+    max-width: 6rem;
     margin-left: 2rem;
     margin-top: 1rem;
 }
