@@ -1,34 +1,54 @@
 const messages = [
-    "I'm a frontend developer",
-    "I create interactive UIs",
-    "I build responsive web designs",
-    "I develop with HTML, CSS, and JavaScript",
-    "I optimize websites for performance",
-    "I ensure cross-browser compatibility",
-    "I implement animations and transitions",
-    "I integrate APIs into web applications",
-    "I collaborate with designers & backend devs",
-    "I enhance user experience (UX)",
-    "I write clean and maintainable code"
+    "I'm a frontend developer.",
+    "I create interactive UIs.",
+    "I build responsive web designs.",
+    "I develop with HTML, CSS, and JavaScript.",
+    "I optimize websites for performance.",
+    "I ensure cross-browser compatibility.",
+    "I implement animations and transitions.",
+    "I integrate APIs into web applications.",
+    "I collaborate with designers & backend devs.",
+    "I enhance user experience (UX).",
+    "I write clean and maintainable code."
 ];
 
 let currentIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 const textElement = document.getElementById('dynamic');
 
-function updateText() {
-    textElement.style.opacity = 0; // Start fade out
-    setTimeout(() => {
-        textElement.textContent = messages[currentIndex];
-        textElement.style.opacity = 1; // Fade in
-        currentIndex = (currentIndex + 1) % messages.length;
-    }, 500); // Wait for fade-out to complete before changing text
+const typingSpeed = 150;    // Speed when typing
+const deletingSpeed = 100;   // Speed when deleting
+const delayBetweenWords = 2000; // Delay after full word typed
+
+function typeWriter() {
+  const currentText = messages[currentIndex];
+
+  if (isDeleting) {
+    textElement.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      currentIndex = (currentIndex + 1) % messages.length;
+    }
+    setTimeout(typeWriter, deletingSpeed);
+
+  } else {
+    textElement.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentText.length) {
+      isDeleting = true;
+      setTimeout(typeWriter, delayBetweenWords); // Wait before deleting
+    } else {
+      setTimeout(typeWriter, typingSpeed);
+    }
+  }
 }
 
-// Initial call to display the first message
-updateText();
-
-// Update the text every 3 seconds
-setInterval(updateText, 3000);
+// Start the typing
+typeWriter();
 
 
 const targetDiv = document.getElementById("sec_div"); // The div that triggers theme change
@@ -93,7 +113,22 @@ const watcher = new IntersectionObserver(
 
 watcher.observe(thi_div);
 
+const reveal = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else{
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  
+  document.querySelectorAll('.child1 div').forEach(el => reveal.observe(el));
+  document.querySelectorAll('.experience p').forEach(el => reveal.observe(el));
+  document.querySelectorAll('.thi_div').forEach(el => reveal.observe(el));
+  
 
+  
 const nav = document.getElementById("menu");
 nav.addEventListener("click", toggleNav);
 
@@ -109,5 +144,35 @@ navcancel.addEventListener("click", navcan);
 
 function navcan() {
   document.getElementById("side-menu").style.right = "-100%";
-  document.getElementById("overlay").style.display = "none"
+  document.getElementById("overlay").style.display = "none";
 }
+
+const bodyWatch = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else{
+        entry.target.classList.remove('visible');
+      }
+    });
+  });
+  
+  document.querySelectorAll(".body").forEach(el => bodyWatch.observe(el));
+  
+  const revealExp = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('clear_exp');
+      } else{
+        entry.target.classList.remove('clear_exp');
+      }
+    });
+  });
+  
+  document.querySelectorAll('.experience').forEach(el => revealExp.observe(el));
+  document.querySelectorAll(".skills").forEach(el => revealExp.observe(el));
+
+
+  AOS.init({
+    mirror: true
+  });
