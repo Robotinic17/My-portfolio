@@ -101,14 +101,14 @@ const fourthDiv = document.getElementById("thi_div"); // The div that triggers t
 const watcher = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
-            if (entry.intersectionRatio >= 0.1) {
-                document.body.classList.add("for_theme"); // Activate dark mode
+            if (entry.intersectionRatio >= 0.07) {
+                document.body.classList.add("for_theme"); 
             } else {
-                document.body.classList.remove("for_theme"); // Return to light mode
+                document.body.classList.remove("for_theme");
             }
         });
     },
-    { threshold: 0.1 } // When 30% of targetDiv is visible
+    { threshold: 0.07 } // When 7% of targetDiv is visible
 );
 
 watcher.observe(thi_div);
