@@ -1344,7 +1344,7 @@ header div ul a:hover{
         max-width: 96%;
     }
     .name {
-        font-size: clamp(35px, 5vw, 100px);
+        font-size: clamp(40px, 5vw, 100px);
     }
 
     .custom_gap_img i {
@@ -1604,9 +1604,13 @@ header div ul a:hover{
 
 @media screen and (max-width: 400px) {
     .body {
-        margin: 12em 0em auto 1em;
+        margin: 50vh 0em auto 1em;
         width: 93%;
         max-width: 96%;
+    }
+    .false {
+        width: 70vw;
+        height: 70vw;
     }
     .skills {
         margin-top: 3rem;
@@ -1616,16 +1620,26 @@ header div ul a:hover{
         width: 40px;
         height: 40px;
     }
+    .bg {
+        width: 85%;
+        height: 190px;
+        display: flex;
+        justify-self: end;
+    }
     .blob {
         top: 35%;
-        left: 46%;
-        width: 145px;
+        left: 44%;
+        width: 140px;
         height: 170px;
+        display: flex;
+        justify-self: center;
     }
     .serve {
         font-size: clamp(15px, 3vw, 40px);
     }
-
+    .custom_gap_img i {
+        font-size: 6px;
+    }
     .con2 {
         font-family: 'Parkinsans';
         font-size: clamp(30px, 5vw, 80px);
